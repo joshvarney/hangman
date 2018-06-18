@@ -1,0 +1,11 @@
+The word to guess is <br>
+<%= display_word.join(" ") %> <br>
+<p><%= message %>
+<p> You only have <%=wrong_guesses_count%> wrong guesses left!
+
+
+<p> Player 2, please choose a letter.
+<form method="post" action="choices">
+<input type="text" name="choices">
+<input type="submit" value="submit">
+</form>
